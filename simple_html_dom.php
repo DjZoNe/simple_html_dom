@@ -358,7 +358,7 @@ class simple_html_dom_node
 
         $ret = '';
         foreach ($this->nodes as $n)
-            $ret .= $n->outertext();
+            $ret .= $n->convert_text($n->outertext());
         return $ret;
     }
 
